@@ -1,0 +1,127 @@
+:root{
+  --title-bg: black;
+  --title-color: #fff;
+  --nav-bg: #333;
+  --nav-hover: #ddd;
+  --input-bg: #eee;
+}
+
+body , input , button , select , textarea {
+  font-family: Roboto;
+  box-shadow: none !important;
+}
+
+
+
+.font-fondamento {
+  font-family: "Fondamento";
+}
+
+header{
+  color: var(--title-color);
+  background: var(--title-bg);
+  box-shadow: 0px 20px 20px -20px #333 !important;
+
+
+  div{
+    background: var(--title-bg) !important;
+  }
+
+  a{
+    font-size: .75rem;
+    color: var(--title-color);
+    border-radius: 0 !important; 
+    font-weight: bold; 
+    box-shadow: inset 0px 0px 3px 0px white !important;
+    
+    &:hover{
+      color: white;
+    }
+    
+    @media (min-width: 768px){
+      padding: 15px !important;
+    }
+  }
+}
+
+a.active {
+  box-shadow: none !important;
+}
+
+h1{
+ color: var(--title-color);
+ background: var(--title-bg);
+ font-size: 1.5em;
+ margin: 0;    
+ letter-spacing: 2px;
+ box-shadow: inset 0px 0px 40px 0px rgba(#eee,0.5) !important;
+
+ &:first-letter{
+   font-size: 3rem;
+ }
+
+ span{
+   font-size: 3rem;
+ }
+
+ @media (min-width: 576px) { 
+  box-shadow: inset 0px 0px 50px 0px rgba(#eee,0.5) !important;
+}
+
+  @media (min-width: 768px) {
+    box-shadow: inset 0px 0px 70px 0px rgba(#eee,0.5) !important;
+  }
+
+  @media (min-width: 992px) {
+ box-shadow: inset 0px 0px 85px 0px rgba(#eee,0.5) !important;
+  }
+  @media (min-width: 1800px) {
+ box-shadow: inset 0px 0px 100px 0px rgba(#eee,0.5) !important;
+  }
+}
+
+
+
+.settings {
+  input {
+    border-radius: 0 !important;
+    font-size: 1.25rem;
+    border: none !important;
+    border-bottom: 5px solid black !important;
+    background: var(--input-bg);
+  }
+}
+
+#alarm-clock , #timer-clock {
+  display: none;
+}
+
+.clock-text {
+  font-size: 3rem;
+  margin: 0;
+
+  @media (min-width: 576px) { 
+    font-size: 4rem;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 5rem;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 6rem;
+  }
+  @media (min-width: 1800px) {
+    font-size: 8rem;
+  }
+}
+
+main {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+
+  @media (min-width: 1800px){
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+  }
+}
